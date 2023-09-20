@@ -1,0 +1,90 @@
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+inp.on("line", (data) => {
+ 
+});
+
+inp.on("close", () => {
+    
+class movie
+{
+    constructor(name,pro,rating)
+    {
+        this.name=name;
+        this.pro=pro;
+        this.rating=rating;
+    }
+   
+}
+const l=new movie("Casino Royale","Eon Productions","PG.13");
+
+console.log(l);
+  
+});
+
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+inp.on("line", (data) => {
+ 
+});
+
+inp.on("close", () => {
+    
+class p
+{
+    constructor(name,age,address)
+    {
+        this.name=name;
+        this.age=age;
+        this.address=address;
+    }
+   
+}
+const l=new p("Casino Royale","18","xxxxxxxxxxxx");
+
+console.log(l);
+  
+});
+
+
+2 .
+class UberPriceCalculator {
+  constructor(baseFare, ratePerMile, ratePerMinute) {
+    this.baseFare = baseFare;
+    this.ratePerMile = ratePerMile;
+    this.ratePerMinute = ratePerMinute;
+  }
+
+  calculatePrice(distanceMiles, durationMinutes) {
+    if (distanceMiles < 0 || durationMinutes < 0) {
+      return "Distance and duration must be non-negative.";
+    }
+
+    const fare = this.baseFare + distanceMiles * this.ratePerMile + durationMinutes * this.ratePerMinute;
+
+    return `Your Uber fare is $${fare.toFixed(2)}`;
+  }
+}
+
+const calculator = new UberPriceCalculator(2.5, 1.5, 0.2);
+
+const distance = 5;
+const duration = 15;
+
+const price = calculator.calculatePrice(distance, duration);
+console.log(price);
+
+
